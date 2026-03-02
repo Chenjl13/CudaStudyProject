@@ -12,3 +12,18 @@ nvcc a.cu -o a_ABCD -arch=compute_AB -code=sm_CD
 nvcc a.cu -o a_fat -gencode arch=compute_AB,code=sm_AB -gencode arch=compute_CD,code=sm_CD -gencode arch=compute_EF,code=sm_EF
 ```
 <img src="a_fat.png">
+
+# nvcc Just-In-Time (JIT) Compilation
+To generate optimized machine code for the specific GPU at runtime.
+<img src="a_jit.png">
+
+
+
+
+
+
+
+
+
+
+
