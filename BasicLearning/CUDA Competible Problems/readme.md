@@ -7,3 +7,4 @@
 nvcc a.cu -o a_ABCD -arch=compute_AB -code=sm_CD
 ```
 
+# Compile under multiple GPU version
