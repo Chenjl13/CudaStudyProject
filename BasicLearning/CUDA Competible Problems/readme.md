@@ -1,5 +1,7 @@
 # Virtual architecture capabilities
-
+```
+nvcc a.cu -o a_AB -arch=compute_AB 
+```
 <img src="a_result.png">
 
 # Real architecture capabilities(CD must bigger than AB)
@@ -14,8 +16,12 @@ nvcc a.cu -o a_fat -gencode arch=compute_AB,code=sm_AB -gencode arch=compute_CD,
 <img src="a_fat.png">
 
 # nvcc Just-In-Time (JIT) Compilation
-To generate optimized machine code for the specific GPU at runtime.
+## To generate optimized machine code for the specific GPU at runtime.
+```
+nvcc a.cu -o a_jit -gencode arch=compute_AB,code=compute_AB
+```
 <img src="a_jit.png">
+
 
 
 
