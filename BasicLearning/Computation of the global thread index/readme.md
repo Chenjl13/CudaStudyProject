@@ -1,4 +1,8 @@
-# Computation of the global thread index.md
+# Computation of the global thread index
+## Grid(Dimension 1) + Block(Dimension1)
+Click [here](./thread_model_1.cu) to quickly go through the code
+And the [result](./thread_model_1_result.png) of above
+
 ### Grid(Dimension 1) + Block(Dimension1)
 ```
 int id = blockIdx.x * blockDim.x + threadIdx.x;
@@ -58,4 +62,5 @@ int id = (blockIdx.x
          + threadIdx.y * blockDim.x
          + threadIdx.x;
 ```
+
 
