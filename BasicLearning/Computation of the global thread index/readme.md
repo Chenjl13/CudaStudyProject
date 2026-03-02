@@ -3,6 +3,7 @@
 Click [here](./thread_model_1.cu) to quickly go through the code
 And the [result](./thread_model_1_result.png) of above
 
+## Calculation
 ### Grid(Dimension 1) + Block(Dimension1)
 ```
 int id = blockIdx.x * blockDim.x + threadIdx.x;
@@ -62,5 +63,6 @@ int id = (blockIdx.x
          + threadIdx.y * blockDim.x
          + threadIdx.x;
 ```
+
 
 
